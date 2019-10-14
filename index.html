@@ -60,30 +60,50 @@
     <section class="testimonials text--dark">
       <div class="wrapper">
         <h2 class="section-title">Клієнти говорять</h2>
-
-        <ul class="testimonials-list d-flex">
-          <li class="prev">
+  
+        <div id="carousel" class="carousel">
+          <button class="arrow prev">
             <i class="fas fa-arrow-circle-left"></i>
-          </li>
-          <li class="testimonial d-flex flex--column bg--primary text--light">
-            <img src="images/testimonial-female-o.jpg" alt="testimonial-female-o">
-            <h3>Олена Іванова</h3>
-            <p>Тут втілять ваші фантазії</p>
-          </li>
-          <li class="testimonial d-flex flex--column bg--primary text--light">
-            <img src="images/testimonial-male.jpg" alt="testimonial-male">
-            <h3>Петро Івашкевич</h3>
-            <p>Сервіс на вищому рівні</p>
-          </li>
-          <li class="testimonial d-flex flex--column bg--primary text--light">
-            <img src="images/testimonial-female-m.jpg" alt="testimonial-female-m">
-            <h3>Маша Ковальова</h3>
-            <p>Дуже привітний персонал</p>
-          </li>
-          <li class="next">
+          </button>
+          <div class="carousel__wrapper">
+            <ul class="testimonials-list d-flex">
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-1.jpg" alt="testimonial-1">
+                <h3>Олена Іванова</h3>
+                <p>Тут втілять ваші фантазії</p>
+              </li>
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-3.jpg" alt="testimonial-2">
+                <h3>Петро Івашкевич</h3>
+                <p>Сервіс на вищому рівні</p>
+              </li>
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-2.jpg" alt="testimonial-3">
+                <h3>Маша Ковальова</h3>
+                <p>Дуже привітний персонал</p>
+              </li>
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-1.jpg" alt="testimonial-1">
+                <h3>Олена Іванова</h3>
+                <p>Тут втілять ваші фантазії</p>
+              </li>
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-3.jpg" alt="testimonial-2">
+                <h3>Петро Івашкевич</h3>
+                <p>Сервіс на вищому рівні</p>
+              </li>
+              <li class="testimonial d-flex flex--column bg--primary text--light">
+                <img src="images/testimonial-2.jpg" alt="testimonial-3">
+                <h3>Маша Ковальова</h3>
+                <p>Дуже привітний персонал</p>
+              </li>
+            </ul>
+          </div>
+          <button class="arrow next">
             <i class="fas fa-arrow-circle-right"></i>
-          </li>
-        </ul>
+          </button>
+        </div>
+  
       </div>
     </section>
 
@@ -159,5 +179,7 @@
     </div>
   </footer>
 
+  <script src="js/testimonials-carousel.js"></script>
+  <!-- <script src="js/formProcessor.js"></script> -->
 </body>
 </html>
