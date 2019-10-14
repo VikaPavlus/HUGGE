@@ -136,12 +136,13 @@
     <section class="write-to-us text--dark">
       <div class="wrapper">
         <h2 class="section-title">Напишіть нам</h2>
-        <form action="send" method="post" class="d-flex flex--column">
-          <input type="text" placeholder="Ваше ім'я">
-          <input type="email" placeholder="Ваш e-mail, нп: example@example.com">
-          <input type="tel" placeholder="Ваш телефон нп, +380XXXXXXXXX">
+        <form id="contactsForm" class="d-flex flex--column">
+          <input id="name" type="text" placeholder="Ваше ім'я">
+          <input id="email" type="email" placeholder="Ваш e-mail, нп: example@example.com">
+          <input id="phone" type="tel" placeholder="Ваш телефон нп, +380XXXXXXXXX">
           <input type="submit" value="Надіслати">
         </form>
+        <p class="hidden" id="successMessage">Дякуємо Вам! 😉<br>Незабаром ми вам зателефонуємо. 🌿</p>
       </div>
     </section>
 
@@ -153,7 +154,7 @@
         <p>Copyright © 2019 Hugge Flowers</p>
         <p>Made in Lviv with love</p>
       </div>
-  
+
       <ul class="social d-flex flex--row">
         <li>
           <a href="#">
@@ -179,7 +180,9 @@
     </div>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script
   <script src="js/testimonials-carousel.js"></script>
-  <!-- <script src="js/formProcessor.js"></script> -->
+  <script src="js/formProcessor.js"></script>
 </body>
 </html>

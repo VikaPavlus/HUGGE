@@ -203,6 +203,10 @@ ul {
   margin: 5px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .write-to-us input:not([type="submit"]) {
   width: 400px;
   border: 1px solid #ccc;
