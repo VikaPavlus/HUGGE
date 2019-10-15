@@ -4,6 +4,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  /* scroll-behavior: smooth; */
 }
 
 html,
@@ -182,7 +183,7 @@ ul {
 .contacts-list {
   position: relative;
   align-items: flex-start;
-  padding: 0 80px;
+  padding: 0 30px 0 80px;
 }
 
 .contacts-map {
@@ -340,6 +341,29 @@ ul {
 
 .next {
   right: -30px;
+}
+
+#scrollToTopButton {
+  height: 40px;
+  width: 40px;
+  background-color: green;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: opacity .3s ease-out;
+  z-index: 600;
+  opacity: .5;
+}
+
+#scrollToTopButton:hover,
+#scrollToTopButton:focus,
+#scrollToTopButton:active {
+  opacity: 1;
+}
+
+div[hidden] {
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
