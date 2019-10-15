@@ -12,6 +12,10 @@
 </head>
 
 <body>
+  <div id="scrollToTopButton" class="d-flex" hidden>
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
   <header class="d-flex flex--column text--light">
     <h1 class="page-title">HUGGE</h1>
     <h3 class="page-subtitle">FLOWERS • POTS • FLORISTICS</h3>
@@ -66,6 +70,7 @@
           <button class="arrow prev">
             <i class="fas fa-arrow-circle-left"></i>
           </button>
+
           <div class="carousel__wrapper">
             <ul class="testimonials-list d-flex">
               <li class="testimonial d-flex flex--column bg--primary text--light">
@@ -100,6 +105,7 @@
               </li>
             </ul>
           </div>
+
           <button class="arrow next">
             <i class="fas fa-arrow-circle-right"></i>
           </button>
@@ -131,18 +137,21 @@
           </li>
         </ul>
       </div>
+
       <div class="contacts-map"></div>
     </section>
 
     <section class="write-to-us text--dark">
       <div class="wrapper">
         <h2 class="section-title">Напишіть нам</h2>
+
         <form id="contactsForm" class="d-flex flex--column">
           <input id="name" type="text" placeholder="Ваше ім'я">
           <input id="email" type="email" placeholder="Ваш e-mail, нп: example@example.com">
           <input id="phone" type="tel" placeholder="Ваш телефон нп, +380XXXXXXXXX">
           <input type="submit" value="Надіслати">
         </form>
+
         <p class="hidden" id="successMessage">Дякуємо Вам! 😉<br>Незабаром ми вам зателефонуємо. 🌿</p>
       </div>
     </section>
@@ -178,10 +187,6 @@
           </a>
         </li>
       </ul>
-    </div>
-
-    <div id="scrollToTopButton" class="d-flex" hidden>
-      <i class="fas fa-arrow-up"></i>
     </div>
   </footer>
 
